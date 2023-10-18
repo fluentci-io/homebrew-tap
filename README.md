@@ -22,7 +22,7 @@ Or `brew tap fluentci-io/tap` and then `brew install <formula>`.
 With the following commands, you can install the latest version of each package:
 ```sh
 # Formulae
-brew install fleuntci-io/tap/fluentci
+brew install fluentci-io/tap/fluentci
 ```
 
 ## Documentation
