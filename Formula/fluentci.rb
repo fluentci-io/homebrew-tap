@@ -21,6 +21,7 @@ class Fluentci < Formula
 
   depends_on "deno"
   depends_on "dagger"
+  depends_on "glow"
 
   def install
     bin.install "fluentci"
