@@ -1,22 +1,22 @@
 class Cli < Formula
   desc "Command line interface for Fluent CI/CD"
   homepage "https://github.com/fluentci-io/fluentci"
-  url "https://github.com/fluentci-io/fluentci/releases/download/v0.16.0/fluentci_v0.16.0_aarch64-apple-darwin.tar.gz"
-  sha256 "0c1a3e25c4f3ea9b84986df5ad74891c0e22a26c0a42580f6135aa657631b4c8"
+  url "https://github.com/fluentci-io/fluentci/releases/download/v0.16.1/fluentci_v0.16.1_aarch64-apple-darwin.tar.gz"
+  sha256 "d76a63c8fb9d9ad39586c7c133116303e2c9008c64bcf820fcded4400ae8401e"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/fluentci-io/fluentci/releases/download/v0.16.0/fluentci_v0.16.0_x86_64-apple-darwin.tar.gz"
-    sha256 "f582622750f7286892b8e83148e00e4f80d05b7ddb895b3473fd5b8144645069"
+    url "https://github.com/fluentci-io/fluentci/releases/download/v0.16.1/fluentci_v0.16.1_x86_64-apple-darwin.tar.gz"
+    sha256 "ed7a8c1970dd1c9ff59a4dcd8c849c016b06b549b0679ec4ddd38413513b07e9"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/fluentci-io/fluentci/releases/download/v0.16.0/fluentci_v0.16.0_aarch64-apple-darwin.tar.gz"
-    sha256 "0c1a3e25c4f3ea9b84986df5ad74891c0e22a26c0a42580f6135aa657631b4c8"
+    url "https://github.com/fluentci-io/fluentci/releases/download/v0.16.1/fluentci_v0.16.1_aarch64-apple-darwin.tar.gz"
+    sha256 "d76a63c8fb9d9ad39586c7c133116303e2c9008c64bcf820fcded4400ae8401e"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/fluentci-io/fluentci/releases/download/v0.16.0/fluentci_v0.16.0_x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "b01582a1cf863b5750cf92e704d203df50ddc7bc89eb1af6710c1d6e07d31f30"
+    url "https://github.com/fluentci-io/fluentci/releases/download/v0.16.1/fluentci_v0.16.1_x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "f13f7a40ce196baa73a5b263c605f0f4c45f7b1c174f5853c4a0f6ec3704429b"
   end
 
   depends_on "deno"
