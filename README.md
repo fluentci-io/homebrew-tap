@@ -23,6 +23,9 @@ With the following commands, you can install the latest version of each package:
 ```sh
 # Formulae
 brew install fluentci-io/tap/fluentci
+
+# Casks
+brew install --cask fluentci-io/tap/fluentci-studio
 ```
 
 ## Documentation
