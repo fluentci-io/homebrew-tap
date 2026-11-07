@@ -1,8 +1,11 @@
 cask "fluentci-studio" do
-  version "0.17.0"
-  sha256 "88cb25193a4c65b8c85aa637901949cf84c682117457432f343adfd3d1ed86f9"
+  arch arm: "aarch64", intel: "x86_64"
 
-  url "https://github.com/fluentci-io/fluentci/releases/download/v#{version}/FluentCI-Studio_v#{version}_aarch64-apple-darwin.dmg"
+  version "0.17.2"
+  sha256 arm:   "ed283c7027fbebff6608dabed192f8d4e6a0a538ccc87e0c730fd73c39cf1bee",
+         intel: "1b2e03f8f4922680f640be3e705f5f8aabed20e58264c97fb0cc333e8cead7c9"
+
+  url "https://github.com/fluentci-io/fluentci/releases/download/v#{version}/FluentCI-Studio_v#{version}_#{arch}-apple-darwin.dmg"
   name "FluentCI Studio"
   desc "Desktop app for Fluent CI/CD"
   homepage "https://github.com/fluentci-io/fluentci"
@@ -12,7 +15,6 @@ cask "fluentci-studio" do
     strategy :github_latest
   end
 
-  depends_on arch: :arm64
   depends_on :macos
 
   app "FluentCI Studio.app"
