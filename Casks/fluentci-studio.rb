@@ -1,11 +1,18 @@
 cask "fluentci-studio" do
-  arch arm: "aarch64", intel: "x86_64"
+  on_arm do
+    version "0.17.5"
+    sha256 "4f7275064dacaeab003eb5792bdb2b2f630fd365c38f04c98f7e1391454ae92f"
 
-  version "0.17.4"
-  sha256 arm:   "c015c88adf9eb6751b070038354e52ba14261488114aefb66ddc7ac45111edc1",
-         intel: "39f1550868fd9f466b190e2d2b3e896818a80498bd0f13560db1e267957927df"
+    url "https://github.com/fluentci-io/fluentci/releases/download/v#{version}/FluentCI-Studio_v#{version}_aarch64-apple-darwin.dmg"
+  end
+  on_intel do
+    # v0.17.5 did not publish an x86_64 DMG; keep Intel on the last release that has one.
+    version "0.17.4"
+    sha256 "39f1550868fd9f466b190e2d2b3e896818a80498bd0f13560db1e267957927df"
 
-  url "https://github.com/fluentci-io/fluentci/releases/download/v#{version}/FluentCI-Studio_v#{version}_#{arch}-apple-darwin.dmg"
+    url "https://github.com/fluentci-io/fluentci/releases/download/v#{version}/FluentCI-Studio_v#{version}_x86_64-apple-darwin.dmg"
+  end
+
   name "FluentCI Studio"
   desc "Desktop app for Fluent CI/CD"
   homepage "https://github.com/fluentci-io/fluentci"
