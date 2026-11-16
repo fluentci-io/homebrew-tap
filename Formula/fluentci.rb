@@ -1,27 +1,27 @@
 class Fluentci < Formula
   desc "Command line interface for Fluent CI/CD"
   homepage "https://github.com/fluentci-io/fluentci"
-  url "https://github.com/fluentci-io/fluentci/releases/download/v0.17.6/fluentci_v0.17.6_aarch64-apple-darwin.tar.gz"
-  sha256 "bee7f8ab27904ffc88f4f64d9e333c7c61ad235b57770a99ccaf51820b610a25"
+  url "https://github.com/fluentci-io/fluentci/releases/download/v0.17.7/fluentci_v0.17.7_aarch64-apple-darwin.tar.gz"
+  sha256 "4a586509bf2b6be1037099066d806a2736920f27315a00d766836cb02c405796"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/fluentci-io/fluentci/releases/download/v0.17.6/fluentci_v0.17.6_x86_64-apple-darwin.tar.gz"
-    sha256 "f4d3e3b7dcac44c432e03178ab888bfb5d90de8f3d187242993bb56014c9860b"
+    url "https://github.com/fluentci-io/fluentci/releases/download/v0.17.7/fluentci_v0.17.7_x86_64-apple-darwin.tar.gz"
+    sha256 "4f6a801befb0eb796f0d4394ce2756e0c66c79b39ff70f7d11872a2f8f33e112"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/fluentci-io/fluentci/releases/download/v0.17.6/fluentci_v0.17.6_aarch64-apple-darwin.tar.gz"
-    sha256 "bee7f8ab27904ffc88f4f64d9e333c7c61ad235b57770a99ccaf51820b610a25"
+    url "https://github.com/fluentci-io/fluentci/releases/download/v0.17.7/fluentci_v0.17.7_aarch64-apple-darwin.tar.gz"
+    sha256 "4a586509bf2b6be1037099066d806a2736920f27315a00d766836cb02c405796"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/fluentci-io/fluentci/releases/download/v0.17.6/fluentci_v0.17.6_x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "769849d75d60c5e585f0c194de2f68fc7d08ace2b4c421e04fa3423cd1b75979"
+    url "https://github.com/fluentci-io/fluentci/releases/download/v0.17.7/fluentci_v0.17.7_x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "ec5fe243e67106aea56c7be911addb66c1e5eca3c265db203d7b8cc2635eff8d"
   end
 
   if OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/fluentci-io/fluentci/releases/download/v0.17.6/fluentci_v0.17.6_aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "2ef3d3147bf2bb86a3323234a67e6e583b25300ce02d33d83ca22e3031d4fabb"
+    url "https://github.com/fluentci-io/fluentci/releases/download/v0.17.7/fluentci_v0.17.7_aarch64-unknown-linux-gnu.tar.gz"
+    sha256 "e26a0f8b20351fe2c6b25e6cc1c490aa67908ca6d0a4f436999d83007f0a517f"
   end
 
   depends_on "deno"
