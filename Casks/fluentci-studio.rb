@@ -1,7 +1,7 @@
 cask "fluentci-studio" do
-  version "0.17.7"
-  sha256 arm:   "1f5ae926531dbc296684bfb365155f5fbdb8aeae456e246b6e8699600d5134bb",
-         intel: "dc02b64c2abb7a84a3ceb1493e21f65292852ebb4863115faee0e480bc1222d8"
+  version "0.17.8"
+  sha256 arm:   "e026ac53eddb686d6d06ac0c90712a9fa03bf7d8472d15565fa77f62a52bad03",
+         intel: "0df389cabd7c3bba625b5fae9e9a23fb2c530d3e97841d1cd20731d5ca0f85be"
 
   on_arm do
     url "https://github.com/fluentci-io/fluentci/releases/download/v#{version}/FluentCI-Studio_v#{version}_aarch64-apple-darwin.dmg"
